@@ -12,12 +12,13 @@ function App() {
 const url='https://users-crud.academlo.tech'
 const [users,getUsers,createUser,deleteUser,updateUser]=useCrud(url)
 const [isDisable, setIsDisable] = useState(true)
+
 useEffect(()=>{
   getUsers('/users')
 },[])
 console.log(users);
 const handleNewUser=()=>{
-  setIsDisable(false)
+  setIsDisable(false)  
 }
 
 

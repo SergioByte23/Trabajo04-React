@@ -46,7 +46,7 @@ const handleExit=()=>{
   return (
     <div className={`form-container ${isDisable && 'form__disable'}`}>
         <form className="form " onSubmit={handleSubmit(submit)}>
-        <h2 className="form__title">Form User</h2>
+        <h2 className="form__title"> Form User</h2>
         <div onClick={handleExit} className="form__x"><i className='bx bx-x-circle'></i></div>
         <label className="form__label">
           <span className="form__span"> email</span>
